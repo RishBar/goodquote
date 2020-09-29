@@ -1,0 +1,4 @@
+<% if @one_quote %>
+  <p><%= @one_quote.text %></p>
+  <%= button_to "Refresh", newquote_path, params: { category: @category },:method => :get %>
+<% end %>

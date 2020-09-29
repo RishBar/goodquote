@@ -1,0 +1,5 @@
+<%= form_with(url: newquote_path, method: "get", local: true) do %>
+  <%= label_tag(:category, "Category:") %>
+  <%= text_field_tag(:category) %>
+  <%= submit_tag("Get quote") %>
+<% end %>
