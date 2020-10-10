@@ -2,3 +2,5 @@
   <p><%= @one_quote.text %></p>
   <%= button_to "Refresh", newquote_path, params: { category: @category },:method => :get %>
 <% end %>
+
+<%= button_to "Pick new category", root_path, :method => :get %>
